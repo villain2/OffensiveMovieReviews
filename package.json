@@ -1,0 +1,28 @@
+{
+  "name": "offensivemoviereviews",
+  "version": "1.0.0",
+  "description": "movie, tv, and gaming review site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/villain2/OffensiveMovieReviews.git"
+  },
+  "keywords": [
+    "movies",
+    "reviews",
+    "gaming",
+    "tv"
+  ],
+  "author": "K.C. Hunter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/villain2/OffensiveMovieReviews/issues"
+  },
+  "homepage": "https://github.com/villain2/OffensiveMovieReviews",
+  "devDependencies": {
+    "gulp": "~3.8.11"
+  }
+}
