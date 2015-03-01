@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Estre';
+  src: url('../fonts/estre.ttf');
+  src: local('☺'),             /* sneakily trick IE */
+  url('../fonts/estre.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+  url('../fonts/estre.ttf') format('truetype'), /* Opera, Safari */
+  url('../fonts/estre.svg#font') format('svg'); /* iOS */
+}
