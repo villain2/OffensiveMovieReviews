@@ -1,0 +1,93 @@
+header {
+  height: 84px;
+  background: #8f2221; /* Old browsers */
+  background: -moz-linear-gradient(top,  #8f2221 0%, #871c1c 47%, #801819 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f2221), color-stop(47%,#871c1c), color-stop(100%,#801819)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #8f2221 0%,#871c1c 47%,#801819 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f2221', endColorstr='#801819',GradientType=0 ); /* IE6-9 */
+
+  .navbar-default {
+    background: none !important;
+    border: none !important;
+    height: 114px;
+    .navbar-nav {
+      li {
+        .active {
+          color: #31b0d5;
+          background: #801819;
+          a:hover {
+            background: red;
+            color: #31b0d5;
+          }
+        }
+        a {
+          height: 84px;
+          padding-top: 38px;
+          color: #ffffff;
+          font-family: 'Estre', sans-serif;
+          text-transform: uppercase;
+          font-size: 16px;
+          &:hover {
+            background: #801819;
+            color: greenyellow;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    background: #801819;
+    color: #ffffff;
+    &:hover {
+      background: black;
+      color: #31b0d5;
+    }
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: black;
+    color: #f3f4f5;
+    &:hover {
+      background: #8f2221;
+      color: #31b0d5;
+    }
+  }
+
+  .navbar-brand, .searchButton {
+    background: url("../img/sprite.png") no-repeat top;
+  }
+
+  .navbar-brand {
+    background-position: 0 0;
+    width: 312px;
+    height: 77px;
+    margin-top: 10px;
+    display: block;
+    background-size: 300%;
+  }
+
+  .searchButton {
+    width: 48px;
+    height: 45px;
+    background-position: 0 -100px;
+    display: block;
+    margin-top: 12px;
+  }
+}
+
+.carousel-caption {
+  background: rgba(133, 27, 27, 0.75);
+  bottom: 25%;
+  font-family: 'Estre', sans-serif;
+}
+
+.carousel-control {
+  padding-top: 15%;
+  font-size: 10em;
+}

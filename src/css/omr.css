@@ -8102,14 +8102,56 @@ header .navbar-default {
   height: 114px;
 }
 
-header .navbar-nav > li > a {
-  color: white !important;
-  font-size: 18px;
+header .navbar-default .navbar-nav li .active {
+  color: #31b0d5;
+  background: #801819;
+}
+
+header .navbar-default .navbar-nav li .active a:hover {
+  background: red;
+  color: #31b0d5;
+}
+
+header .navbar-default .navbar-nav li a {
+  height: 84px;
+  padding-top: 38px;
+  color: #ffffff;
   font-family: 'Estre', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-top: 33px !important;
-  height: 84px;
+  font-size: 16px;
+}
+
+header .navbar-default .navbar-nav li a:hover {
+  background: #801819;
+  color: greenyellow;
+}
+
+header .navbar-nav > .active > a,
+header .navbar-nav > .active > a:hover,
+header .navbar-nav > .active > a:focus {
+  background: #801819;
+  color: #ffffff;
+}
+
+header .navbar-nav > .active > a:hover,
+header .navbar-nav > .active > a:hover:hover,
+header .navbar-nav > .active > a:focus:hover {
+  background: black;
+  color: #31b0d5;
+}
+
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:hover,
+header .navbar-default .navbar-nav > .active > a:focus {
+  background: black;
+  color: #f3f4f5;
+}
+
+header .navbar-default .navbar-nav > .active > a:hover,
+header .navbar-default .navbar-nav > .active > a:hover:hover,
+header .navbar-default .navbar-nav > .active > a:focus:hover {
+  background: #8f2221;
+  color: #31b0d5;
 }
 
 header .navbar-brand,
@@ -8120,7 +8162,7 @@ header .searchButton {
 header .navbar-brand {
   background-position: 0 0;
   width: 312px;
-  height: 100px;
+  height: 77px;
   margin-top: 10px;
   display: block;
   background-size: 300%;
@@ -8134,8 +8176,94 @@ header .searchButton {
   margin-top: 12px;
 }
 
+.carousel-caption {
+  background: rgba(133, 27, 27, 0.75);
+  bottom: 25%;
+  font-family: 'Estre', sans-serif;
+}
+
+.carousel-control {
+  padding-top: 15%;
+  font-size: 10em;
+}
+
+a {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 arcticle {
   font-size: 1.05em;
+}
+
+.recentReviewsContainer {
+  background: #82191a;
+  color: #ffffff;
+  padding: 32px 0;
+}
+
+.recentReviewsContainer h1 {
+  font-family: 'Estre', sans-serif;
+  font-size: 1.75em;
+  letter-spacing: 0.05em;
+  margin: 0 0 10px 30px;
+  text-transform: uppercase;
+}
+
+.recentReviewsBlock figure {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.recentReviewsBlock figure img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.recentReviewsBlock figure img:hover {
+  border: 1px solid #dbdda7;
+}
+
+.recentReviewsBlock .recentReviewsBlockTitle h2,
+.recentReviewsBlock .recentReviewsBlockTitle p {
+  font-family: 'Estre', sans-serif;
+  font-size: 1.415em;
+  padding: 0 0 2px 0;
+  margin-left: 12px;
+  border-bottom: 1px solid #dadada;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: -4px;
+  letter-spacing: 4px;
+}
+
+.recentReviewsBlock .recentReviewsBlockTitle h2 a,
+.recentReviewsBlock .recentReviewsBlockTitle p a {
+  color: white;
+}
+
+.recentReviewsBlock .recentReviewsBlockTitle h2 a:hover,
+.recentReviewsBlock .recentReviewsBlockTitle p a:hover {
+  color: #dbdda7;
+  text-decoration: none;
+}
+
+.recentReviewsBlock .recentReviewsBlockTitle p {
+  font-size: 0.85em;
+  padding: 0;
+  border: none;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.mainBody h1 {
+  font-family: 'Estre', sans-serif;
+  font-size: 1.75em;
+  letter-spacing: 0.05em;
+  margin: 30px 0 10px 30px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 786px) {
@@ -8152,7 +8280,8 @@ arcticle {
   }
 
   header .navbar-brand {
-    background-size: auto;
+    background-size: 300%;
+    margin: -30px auto 0;
   }
 
   header .searchButton {

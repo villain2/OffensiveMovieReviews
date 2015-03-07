@@ -1,60 +1,84 @@
+@import 'mixins';
 @import 'fonts';
+@import 'override';
 
 
-
-header {
-  height: 84px;
-  background: #8f2221; /* Old browsers */
-  background: -moz-linear-gradient(top,  #8f2221 0%, #871c1c 47%, #801819 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f2221), color-stop(47%,#871c1c), color-stop(100%,#801819)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #8f2221 0%,#871c1c 47%,#801819 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #8f2221 0%,#871c1c 47%,#801819 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f2221', endColorstr='#801819',GradientType=0 ); /* IE6-9 */
-
-  .navbar-default {
-    background: none !important;
-    border: none !important;
-    height: 114px;
-  }
-
-  .navbar-nav > li > a {
-    color: white !important;
-    font-size: 18px;
-    font-family: 'Estre', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-top: 33px !important;
-    height: 84px;
-  }
-
-  .navbar-brand, .searchButton {
-    background: url("../img/sprite.png") no-repeat top;
-  }
-
-  .navbar-brand {
-    background-position: 0 0;
-    width: 312px;
-    height: 100px;
-    margin-top: 10px;
-    display: block;
-    background-size: 300%;
-  }
-
-  .searchButton {
-    width: 48px;
-    height: 45px;
-    background-position: 0 -100px;
-    display: block;
-    margin-top: 12px;
-  }
+a {
+  @include tTransition;
 }
-
 
 arcticle {
   font-size: 1.05em;
 }
+
+.recentReviewsContainer {
+  background: #82191a;
+  color: #ffffff;
+  padding: 32px 0;
+  h1 {
+    font-family: 'Estre', sans-serif;
+    font-size: 1.75em;
+    letter-spacing: 0.05em;
+    margin: 0 0 10px 30px;
+    text-transform: uppercase;
+  }
+}
+
+.recentReviewsBlock {
+  figure {
+    width: 100%;
+    height: 100%;
+    float: left;
+    img {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        border: 1px solid #dbdda7;
+      }
+    }
+  }
+  .recentReviewsBlockTitle {
+    h2, p {
+      font-family: 'Estre', sans-serif;
+      font-size: 1.415em;
+      padding: 0 0 2px 0;
+      margin-left: 12px;
+      border-bottom: 1px solid #dadada;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: -4px;
+      letter-spacing: 4px;
+      a {
+        color: white;
+      }
+      a:hover {
+        color: #dbdda7;
+        text-decoration: none;
+      }
+    }
+    p {
+      font-size: 0.85em;
+      padding: 0;
+      border: none;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.mainBody {
+  h1 {
+    font-family: 'Estre', sans-serif;
+    font-size: 1.75em;
+    letter-spacing: 0.05em;
+    margin: 30px 0 10px 30px;
+    text-transform: uppercase;
+  }
+}
+
+
+
 
 @media screen and (max-width: 786px)
 {
@@ -70,7 +94,8 @@ arcticle {
       }
 
       .navbar-brand {
-        background-size: auto;
+        background-size: 300%;
+        margin: -30px auto 0;
       }
 
       .searchButton {
