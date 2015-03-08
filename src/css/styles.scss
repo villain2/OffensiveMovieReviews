@@ -11,6 +11,16 @@ arcticle {
   font-size: 1.05em;
 }
 
+.searchBox {
+  color: #656565;
+  input[type="text"]{
+    font-size: 2em;
+    padding: 8px;
+    width: 100%;
+    border: none;
+  }
+}
+
 .recentReviewsContainer {
   background: #82191a;
   color: #ffffff;
@@ -74,6 +84,126 @@ arcticle {
     letter-spacing: 0.05em;
     margin: 30px 0 10px 30px;
     text-transform: uppercase;
+  }
+
+  .3dboxes {
+    -webkit-perspective: 600;
+  }
+
+  .articleBlock {
+    background: #82191a;
+    padding: 4px 8px;
+    color: #fff;
+    font-family: 'Estre', sans-serif;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 0 14px 24px;
+    cursor: pointer;
+    @include tTransition;
+    position: relative;
+    .blocktxt {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+    }
+    .blockbg {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      opacity: 0.25;
+    }
+    &:hover {
+      background: #198257;
+      @include tTransition;
+    }
+    .articleDate {
+      font-size: 0.85em;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 30px 0 20px;
+      padding: 0 8px 8px 8px;
+      text-transform: none;
+      letter-spacing: 0.115em;
+    }
+    p {
+      font-size: 0.95em;
+      padding: 0;
+      margin: 12px 8px;
+      line-height: 1.512em;
+    }
+
+  }
+}
+
+.ad300250 {
+  width: 300px;
+  height: 250px;
+  background: black;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.headerAdContainer {
+  width: 100%;
+  height: auto;
+  background: url("../img/dark_matter.png") repeat #82191a;
+  -moz-box-shadow: inset 0 0 5px #000;
+  -webkit-box-shadow: inset 0 0 5px#000;
+  box-shadow: inner 0 0 5px #000;
+  padding: 12px 0;
+  .headerAd {
+    width: 728px;
+    height: 90px;
+    display: block;
+    background: black;
+    margin: 12px auto;
+  }
+}
+
+.sidebarLeft {
+  text-align: center;
+  h2 {
+    font-family: 'Estre', sans-serif;
+    font-size: 1.65em;
+    color: #000;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .trailerReviewBox {
+    width: 100%;
+    img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 0;
+  a {
+    color: inherit;
+  }
+  .footerIcon {
+    background: url('../img/sprite.png') no-repeat top;
+    background-position: 0 0;
+    width: 67px;
+    height: 82px;
+    display: block; 
+    a {
+      display: block;
+    }
+  }
+
+  .footerTerms {
+    color: #656565;
+    font-size: 0.85em;
+    padding: 2px 0 0 14px;
+    a:hover {
+      color: #fff;
+    }
   }
 }
 

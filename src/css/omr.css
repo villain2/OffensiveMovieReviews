@@ -8159,6 +8159,11 @@ header .searchButton {
   background: url("../../../src/img/sprite.png") no-repeat top;
 }
 
+header .navbar-brand:hover,
+header .searchButton:hover {
+  cursor: pointer;
+}
+
 header .navbar-brand {
   background-position: 0 0;
   width: 312px;
@@ -8187,6 +8192,17 @@ header .searchButton {
   font-size: 10em;
 }
 
+.nav-pills a {
+  color: #fff;
+}
+
+footer .nav > li > a:hover,
+footer .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #82191a;
+  color: #f3f4f5;
+}
+
 a {
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -8194,6 +8210,17 @@ a {
 
 arcticle {
   font-size: 1.05em;
+}
+
+.searchBox {
+  color: #656565;
+}
+
+.searchBox input[type="text"] {
+  font-size: 2em;
+  padding: 8px;
+  width: 100%;
+  border: none;
 }
 
 .recentReviewsContainer {
@@ -8264,6 +8291,141 @@ arcticle {
   letter-spacing: 0.05em;
   margin: 30px 0 10px 30px;
   text-transform: uppercase;
+}
+
+.mainBody .3dboxes {
+  -webkit-perspective: 600;
+}
+
+.mainBody .articleBlock {
+  background: #82191a;
+  padding: 4px 8px;
+  color: #fff;
+  font-family: 'Estre', sans-serif;
+  min-height: 300px;
+  overflow: hidden;
+  margin: 0 14px 24px;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.mainBody .articleBlock .blocktxt {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.mainBody .articleBlock .blockbg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  opacity: 0.25;
+}
+
+.mainBody .articleBlock:hover {
+  background: #198257;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.mainBody .articleBlock .articleDate {
+  font-size: 0.85em;
+}
+
+.mainBody .articleBlock h1 {
+  font-size: 2em;
+  margin: 30px 0 20px;
+  padding: 0 8px 8px 8px;
+  text-transform: none;
+  letter-spacing: 0.115em;
+}
+
+.mainBody .articleBlock p {
+  font-size: 0.95em;
+  padding: 0;
+  margin: 12px 8px;
+  line-height: 1.512em;
+}
+
+.ad300250 {
+  width: 300px;
+  height: 250px;
+  background: black;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.headerAdContainer {
+  width: 100%;
+  height: auto;
+  background: url("../../../src/img/dark_matter.png") repeat #82191a;
+  -moz-box-shadow: inset 0 0 5px #000;
+  -webkit-box-shadow: inset 0 0 5px #000;
+  box-shadow: inner 0 0 5px #000;
+  padding: 12px 0;
+}
+
+.headerAdContainer .headerAd {
+  width: 728px;
+  height: 90px;
+  display: block;
+  background: black;
+  margin: 12px auto;
+}
+
+.sidebarLeft {
+  text-align: center;
+}
+
+.sidebarLeft h2 {
+  font-family: 'Estre', sans-serif;
+  font-size: 1.65em;
+  color: #000;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sidebarLeft .trailerReviewBox {
+  width: 100%;
+}
+
+.sidebarLeft .trailerReviewBox img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer .footerIcon {
+  background: url("../../../src/img/sprite.png") no-repeat top;
+  background-position: 0 0;
+  width: 67px;
+  height: 82px;
+  display: block;
+}
+
+footer .footerIcon a {
+  display: block;
+}
+
+footer .footerTerms {
+  color: #656565;
+  font-size: 0.85em;
+  padding: 2px 0 0 14px;
+}
+
+footer .footerTerms a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 786px) {
