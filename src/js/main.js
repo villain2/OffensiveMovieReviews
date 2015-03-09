@@ -13,6 +13,45 @@ omr.controller('SearchCtrl', ['$scope', '$element', function ($scope, $element)
 	}
 }]);
 
+omr.controller('NavigationCtrl', ['$scope', '$location', function ($scope, $location){
+    $scope.pages = [
+        {
+            "page": "reviews",
+            "active": false
+        },
+        {
+            "page": "classics",
+            "active": false
+        },
+        {
+            "page": "television",
+            "active": false
+        },
+        {
+            "page": "games",
+            "active": false
+        },
+        {
+            "page": "articles",
+            "active": false
+        }
+    ]
+
+    var section = $location.$$absUrl;
+
+    for(var i = 0; i < $scope.pages.length; i++)
+    {
+        console.log(section);
+        console.log($scope.pages[i].page);
+        if(section.indexOf($scope.pages[i].page) > -1)
+        {
+            $scope.pages[i].active = true;
+        }
+    }
+
+    console.log($scope.pages);
+}]);
+
 omr.directive('articleblock', [function()
 {
 	return {

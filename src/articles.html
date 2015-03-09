@@ -31,12 +31,12 @@
                     <ul class="nav navbar-nav navbar-right search">
                         <li class="searchButton" data-ng-click="openSearchModal()" data-toggle="modal" data-target="#searchModal"></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/">Reviews</a></li>
-                        <li><a href="/">Classics</a></li>
-                        <li><a href="/">Television</a></li>
-                        <li><a href="/">Games</a></li>
-                        <li><a href="/">Articles</a></li>
+                    <ul class="nav navbar-nav navbar-right" data-ng-controller="NavigationCtrl">
+                        <li data-ng-class="{active: pages[0].active}"><a href="/">Reviews</a></li>
+                        <li data-ng-class="{active: pages[1].active}"><a href="/">Classics</a></li>
+                        <li data-ng-class="{active: pages[2].active}"><a href="/">Television</a></li>
+                        <li data-ng-class="{active: pages[3].active}"><a href="/">Games</a></li>
+                        <li data-ng-class="{active: pages[4].active}"><a href="/">Articles</a></li>
                     </ul>
                 </div>
 
