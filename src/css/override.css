@@ -48,6 +48,8 @@ header {
     header .navbar-default .navbar-nav > .active > a:hover, header .navbar-default .navbar-nav > .active > a:hover:hover, header .navbar-default .navbar-nav > .active > a:focus:hover {
       background: #8f2221;
       color: #31b0d5; }
+  header .navbar-right.search {
+    margin: 0 20px; }
   header .navbar-brand, header .searchButton {
     background: url("../img/sprite.png") no-repeat top; }
     header .navbar-brand:hover, header .searchButton:hover {
@@ -87,6 +89,33 @@ header {
   background-color: #82191a; }
   .btn-primary:hover {
     background-color: #d81e05; }
+
+.jumbotron {
+  text-align: center; }
+  .jumbotron img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+
+.entry-content p {
+  margin: 0 0 30px;
+  font-size: 1.55em;
+  color: #121212; }
+
+.pagination .current {
+  border: 1px solid #dadada;
+  background: #82191a;
+  color: white;
+  padding: 8px;
+  margin: 0 4px; }
+.pagination a {
+  border: 1px solid #dadada;
+  color: #82191a;
+  padding: 8px;
+  margin: 0 4px; }
+.pagination a:hover, .pagination.current {
+  background: #d81e05;
+  color: #fff; }
 
 footer .nav > li > a:hover, footer .nav > li > a:focus {
   text-decoration: none;

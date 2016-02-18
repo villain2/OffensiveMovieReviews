@@ -59,6 +59,12 @@ header {
     }
   }
 
+.navbar-right {
+  &.search {
+    margin: 0 20px;
+  }
+}
+
   .navbar-brand, .searchButton {
     background: url("../img/sprite.png") no-repeat top;
     &:hover {
@@ -111,6 +117,43 @@ header {
   background-color: #82191a;
   &:hover {
     background-color: #d81e05;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.entry-content {
+  p {
+      margin: 0 0 30px;
+      font-size: 1.55em;
+      color: #121212;
+  }
+}
+
+.pagination {
+  .current {
+    border: 1px solid #dadada;
+    background: #82191a;
+    color: white;
+    padding: 8px;
+    margin: 0 4px;
+  }
+  a {
+    border: 1px solid #dadada;
+    color: #82191a;
+    padding: 8px;
+    margin: 0 4px;
+  }
+  a:hover, &.current {
+    background: #d81e05;
+    color: #fff;
   }
 }
 

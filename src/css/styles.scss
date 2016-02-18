@@ -111,9 +111,17 @@ arcticle {
       position: absolute;
       top: 0;
       opacity: 0.25;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    a {
+      color: #ffffff;
     }
     &:hover {
       background: #198257;
+      color: #f3f4f5;
       @include tTransition;
     }
     .articleDate {

@@ -89,5 +89,5 @@ gulp.task('moveFilesBuild', function ()
 
 gulp.task('build', function (callback)
 {
-	runSequence('clean', 'buildJS', 'buildSassDev', 'stylesBuild', 'replacePath', 'renameBuild', 'moveFilesBuild', callback);
+	runSequence('clean', 'buildJS', 'stylesBuild', 'replacePath', 'renameBuild', 'moveFilesBuild', callback);
 });
